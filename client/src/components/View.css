@@ -1,0 +1,115 @@
+.view {
+  position: absolute;
+  top: 20vh;
+  left: 25vw;
+  right: 25vw;
+  display: block;
+  z-index: 100;
+  padding: 2rem;
+  background-color: white;
+  border-radius: 2rem;
+  color: black;
+  opacity: 0.9;
+}
+
+.viewTitle {
+  font-size: xx-large;
+}
+
+.viewContents {
+  font-size: medium;
+}
+
+.viewFooter {
+  display: grid;
+  grid-template-columns: repeat(2, 1fr);
+  gap: 5px;
+}
+
+.gobacklist {
+  width: 100%;
+  height: 100%;
+  border: 2px solid #eae2e1;
+  border-radius: 5px;
+  padding: 1px;
+  background-color: rgb(214, 227, 245);
+  flex: 1;
+}
+
+.likebox {
+  width: 100%;
+  height: 100%;
+  flex: 1;
+  border: 2px solid #eae2e1;
+  border-radius: 5px;
+  display: flex;
+  cursor: pointer;
+  background-color: rgb(214, 227, 245);
+}
+
+.heart,
+.noHeart {
+  position: absolute;
+  top: 21%;
+  right: 10%;
+}
+.numb {
+  color: black;
+  position: absolute;
+  top: 20%;
+  right: 8%;
+}
+.heart {
+  height: 30px;
+  width: 50px;
+  background: url('../Images/heart.png') no-repeat;
+  background-position: left;
+  background-size: 3000%;
+  z-index: 1000;
+}
+.noHeart {
+  height: 30px;
+  width: 50px;
+  background: url('../Images/heart.png') no-repeat;
+  background-position: -1450px;
+  background-size: 3000%;
+  z-index: 1000;
+}
+
+.heart:hover {
+  background-position: right;
+  animation: animate 0.8s steps(28) 1;
+}
+@keyframes animate {
+  0% {
+    background-position: left;
+  }
+  100% {
+    background-position: right;
+  }
+}
+
+hr {
+  border: 0;
+  clear: both;
+  display: block;
+  width: 96%;
+  background-color: #a09292;
+  height: 1px;
+}
+
+@media screen and (max-width: 640px) {
+  .view {
+    position: absolute;
+    top: 20vh;
+    left: 10vw;
+    right: 10vw;
+    display: block;
+    z-index: 100;
+    padding: 1.5rem;
+    background-color: white;
+    border-radius: 2rem;
+    color: black;
+    opacity: 0.9;
+  }
+}

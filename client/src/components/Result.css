@@ -1,0 +1,146 @@
+.result {
+  position: absolute;
+  top: 0;
+  bottom: 0;
+  width: 100%;
+  height: 100%;
+  overflow: hidden;
+}
+
+.result-container {
+  position: absolute;
+  top: 20vh;
+  left: 10vw;
+  right: 10vw;
+  bottom: 10vh;
+  display: block;
+  z-index: 100;
+  padding: 1.5rem;
+  background-color: white;
+  opacity: 0.9;
+  border-radius: 2rem;
+  color: rgb(5, 5, 5);
+  flex-direction: row;
+  overflow: auto;
+  -ms-overflow-style: none;
+  scrollbar-width: none;
+  box-sizing: border-box;
+  height: 75%;
+}
+.result-container::-webkit-scrollbar {
+  display: none;
+}
+
+.result-title {
+  display: flex;
+  align-items: center;
+  box-sizing: border-box;
+  flex-direction: column;
+  font-size: xx-large;
+  font-weight: bolder;
+}
+
+.cities {
+  display: grid;
+  height: auto;
+  grid-template-columns: repeat(3, 1fr);
+  gap: 2rem;
+  grid-auto-rows: minmax(50px, auto);
+  padding: 5vh;
+  overflow: auto;
+}
+
+.city {
+  border: 5px solid black;
+  background-size: cover;
+  color: white;
+}
+
+.Circular {
+  position: relative;
+  top: 50%;
+  left: 50%;
+  z-index: 1000;
+}
+
+@media screen and (max-width: 640px) {
+  .result-container {
+    position: absolute;
+    top: 20vh;
+    left: 10vw;
+    right: 10vw;
+    bottom: 20vh;
+    display: block;
+    z-index: 100;
+    padding: 1.5rem;
+    background-color: white;
+    border-radius: 2rem;
+    color: black;
+    opacity: 0.9;
+    overflow: auto;
+    -ms-overflow-style: none;
+    scrollbar-width: none;
+  }
+
+  .result-container::-webkit-scrollbar {
+    display: none;
+  }
+
+  .result-title {
+    display: flex;
+    align-items: center;
+    box-sizing: border-box;
+    flex-direction: column;
+    font-size: large;
+    font-weight: bolder;
+  }
+
+  .cities {
+    display: flex;
+    flex-direction: column;
+    font-size: x-small;
+
+    padding : 4vw;
+    gap : 2rem
+
+  }
+}
+.titlelayer {
+  position: relative;
+  box-sizing: border-box;
+  background-color: black;
+  opacity: 0.7;
+  border-radius: 1rem;
+  height: 100%;
+  width: 100%;
+  
+}
+.cityname {
+  color: white;
+  text-align: right;  
+  font-weight: bolder;
+}
+
+.estTime {
+  position: absolute;
+  display: block;
+  bottom: 0;
+  color: white;
+  text-align: center;
+  width:100%;
+}
+.where {
+  background-position: center, center;
+  background-size: cover;
+  background-repeat: no-repeat;
+  width: 100%;
+  height: 20vh;
+  border-radius: 1rem;
+  
+  /* border : 1px solid lightgray; */
+  box-shadow: rgba(0, 0, 0, 0.16) 0px 3px 6px, rgba(0, 0, 0, 0.23) 0px 3px 6px;
+}
+
+.titlelayer:hover {
+  opacity: 0;
+}
