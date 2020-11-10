@@ -1,0 +1,90 @@
+.editor {
+  position: absolute;
+  top: 0;
+  bottom: 0;
+  width: 100%;
+  height: 100%;
+  overflow: hidden;
+  z-index: 100;
+}
+
+.article-container {
+  position: absolute;
+  top: 20vh;
+  left: 10vw;
+  right: 10vw;
+  display: flex;
+  z-index: 100;
+  padding: 1.5rem;
+  background-color: white;
+  opacity: 0.9;
+  border-radius: 2rem;
+  color: rgb(5, 5, 5);
+}
+
+.editorArticle {
+  position: relative;
+  display: flex;
+  flex-direction: column;
+  left: 1vw;
+  right: 1vw;
+  width: 73vw;
+}
+.editorArticle input {
+  color: black;
+  border: none;
+}
+.editorTitle {
+  font-size: x-large;
+  border-bottom: 1px solid;
+  padding-bottom: 1rem;
+}
+.editorContents {
+  padding: 1vh;
+  border: none;
+  outline: none;
+  font-size: medium;
+  margin-bottom: 1rem;
+  resize: both;
+}
+
+.editorArticle button {
+  background-color: #99ccdd;
+  border: none;
+  border-radius: 0.5rem;
+  font-weight: bolder;
+  font-size: 1rem;
+}
+
+@media screen and (max-width: 640px) {
+  .article-container {
+    position: absolute;
+    top: 20vh;
+    left: 10vw;
+    right: 10vw;
+    display: flex;
+    z-index: 100;
+    padding: 1.5rem;
+    background-color: white;
+    opacity: 0.9;
+    border-radius: 2rem;
+    color: rgb(5, 5, 5);
+  }
+
+  .editorArticle {
+    position: relative;
+    display: flex;
+    flex-direction: column;
+    left: 1vw;
+    width: 70vw;
+  }
+}
+
+.editorArticle hr {
+  border: 0;
+  clear: both;
+  display: block;
+  width: 96%;
+  background-color: #a09292;
+  height: 1px;
+}

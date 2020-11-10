@@ -1,0 +1,120 @@
+.modal {
+  position: fixed;
+  z-index: 9999;
+  height: 100%;
+  width: 100%;
+  background-color: black;
+  opacity: 0.7;
+}
+
+.modalContents {
+  position: fixed;
+  display: block;
+  box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
+  z-index: 10000;
+  top: 50%;
+  left: 50%;
+  padding: 2rem;
+  transform: translate(-50%, -50%);
+  -ms-transform: translate(-50%, -50%);
+  -webkit-transform: translate(-50%, -50%);
+  background-color: white;
+  border-radius: 1rem;
+  color: black;
+}
+
+.modalForm h3 {
+  font-size: 1rem;
+}
+
+.modalForm h2 {
+  font-size: 1.5rem;
+}
+
+.modalForm input {
+  font-size: 1rem;
+  color: black;
+}
+.login h2,
+h3 {
+  display: inline;
+}
+.login h2 {
+  margin: 0 auto;
+}
+.modalForm {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  box-sizing: border-box;
+  width: 100%;
+  height: 100%;
+}
+.login {
+  display: flex;
+  flex-direction: row;
+  border-bottom: 1px solid lightgray;
+  width: 100%;
+}
+.modalForm input,
+button,
+p {
+  margin-top: 0.5rem;
+  font-weight: bold;
+}
+.modalForm button {
+  box-sizing: border-box;
+  width: 100%;
+  padding: 0.3rem;
+  background-color: #99ccdd;
+  border: none;
+  border-radius: 0.3rem;
+  font-weight: bolder;
+  font-size: 1rem;
+}
+.modalForm div {
+  font-size: 0.7rem;
+  font-weight: bold;
+}
+.modalForm a {
+  text-decoration: none;
+}
+.modalForm p:visited {
+  color: black;
+}
+.modalForm input {
+  border: 1px solid lightgray;
+  margin-bottom: 0;
+}
+
+.social {
+  padding-top: 0.5rem;
+  padding-bottom: 0.5rem;
+  border-bottom: 1px solid lightgray;
+
+  width: 100%;
+  text-align: center;
+}
+
+img {
+  box-sizing: border-box;
+  width: 60%;
+}
+
+.invaild-message {
+  color: red;
+}
+
+@media screen and (max-width: 640px) {
+  .modalContents {
+    position: fixed;
+    display: block;
+    box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
+    z-index: 10000;
+    top: 50vh;
+    padding: 2rem;
+    background-color: white;
+    border-radius: 1rem;
+    color: black;
+  }
+}

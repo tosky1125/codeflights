@@ -1,0 +1,65 @@
+* {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+  list-style: none;
+  text-decoration: none;
+  font-family: 'Noto Sans KR', sans-serif;
+}
+
+body::-webkit-scrollbar {
+  display: none;
+}
+
+.App-contents {
+  display: block;
+}
+
+.App-component {
+  position: absolute;
+  top: 0;
+  bottom: 0;
+  width: 100%;
+  height: 100%;
+  overflow: hidden;
+}
+
+.video {
+  min-width: 100%;
+  min-height: 100%;
+  width: auto;
+  height: auto;
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  overflow: hidden;
+}
+
+@media screen and (max-width: 640px) {
+  .App-contents {
+    display: none;
+  }
+}
+
+.blink {
+  -webkit-animation: blink 2s linear infinite;
+}
+@keyframes blink {
+  0% {
+    color: white;
+  }
+  100% {
+    color: rgb(232, 255, 26);
+  }
+}
+
+.focus {
+  -webkit-transition: 0.3s;
+  transition: 0.3s;
+}
+
+.focus:hover {
+  -webkit-transform: scale(1.1);
+  transform: scale(1.1);
+}
