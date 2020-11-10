@@ -1,0 +1,113 @@
+.mypage {
+  position: absolute;
+  top: 0;
+  bottom: 0;
+  width: 100%;
+  height: 100%;
+  overflow: hidden;
+}
+
+.userinfo-container {
+  position: absolute;
+  top: 30vh;
+  left: 35vw;
+  right: 35vw;
+  display: block;
+  z-index: 100;
+  padding: 2rem;
+  background-color: white;
+  border-radius: 2rem;
+  color: black;
+  opacity: 0.9;
+}
+
+.userinfo {
+  display: flex;
+  flex-direction: column;
+}
+
+.usertitle {
+  display: flex;
+  position: relative;
+  flex-direction: column;
+  align-items: center;
+  box-sizing: border-box;
+  width: 100%;
+  height: 100%;
+  font-size: medium;
+  margin : 0;
+}
+
+.changeinfotitle {
+  display: flex;
+  position: relative;
+  flex-direction: column;
+  align-items: center;
+  box-sizing: border-box;
+  height: 100%;
+  width: 100%;
+  border: none;
+  outline: none;
+  font-size: medium;
+  margin : 0;
+  
+  resize: both;
+}
+
+.changeinfo input {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  box-sizing: border-box;
+  height: 100%;
+  width: 100%;
+  border: none;
+  outline: none;
+  font-size: medium;
+  margin-bottom: 1rem;
+  resize: both;
+}
+
+.submitBtn {
+  width: 100%;
+  background-color: #99ccdd;
+  border: none;
+  border-radius: 0.5rem;
+  font-weight: bolder;
+  font-size: 1rem;
+}
+
+.myPageIcons {
+  width: 50px;
+  height: 50px;
+  margin-top: 1rem;
+  margin-bottom: 1rem;
+}
+.emailH3 {
+  padding-bottom: 1rem;
+}
+hr {
+  border: 0;
+  clear: both;
+  display: block;
+  width: 96%;
+  background-color: #070707;
+  height: 1px;
+}
+
+@media screen and (max-width: 640px) {
+  .userinfo-container {
+    position: absolute;
+    top: 20vh;
+    left: 10vw;
+    right: 10vw;
+    display: block;
+    z-index: 100;
+    padding: 1.5rem;
+    background-color: white;
+    border-radius: 2rem;
+    color: black;
+    opacity: 0.9;
+  }
+}
+
